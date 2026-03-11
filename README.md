@@ -43,7 +43,6 @@ PYTHONPATH=. python train/train_vqgan.py \
   model.n_hiddens=32 \
   model.embedding_dim=16 \
   model.n_codes=1024 \
-  model.max_epochs=100 \
   model.precision=16 \
   model.accumulate_grad_batches=4
 ```
@@ -66,7 +65,7 @@ PYTHONPATH=. python train/train_ddpm.py \
   model.diffusion_num_channels=8 \
   model.dim_mults=[1,2,4,8] \
   model.batch_size=2 \
-  model.save_and_sample_every=1000 \
+  model.save_and_sample_every=5000 \
   model.gpus=0
 ```
 
