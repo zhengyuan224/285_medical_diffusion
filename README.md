@@ -25,6 +25,9 @@ pip install -r requirements.txt
 ```
 
 # Training
+
+vqgan training
+
 ```
 export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 ```
@@ -45,6 +48,12 @@ PYTHONPATH=. python train/train_vqgan.py \
   model.accumulate_grad_batches=4
 ```
 
+ddpm training
+
+```
+export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+```
+
 ```
 PYTHONPATH=. python train/train_ddpm.py \
   model=ddpm \
@@ -56,7 +65,8 @@ PYTHONPATH=. python train/train_ddpm.py \
   model.diffusion_depth_size=8 \
   model.diffusion_num_channels=8 \
   model.dim_mults=[1,2,4,8] \
-  model.batch_size=4 \
+  model.batch_size=2 \
+  model.save_and_sample_every=50 \
   model.gpus=0
 ```
 
