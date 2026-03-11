@@ -1,7 +1,9 @@
 # Medical Diffusion
 
-This repository contains the code to our paper "Medical Diffusion: Denoising Diffusion Probabilistic Models for 3D Medical Image Synthesis"
+Code mainly from "Medical Diffusion: Denoising Diffusion Probabilistic Models for 3D Medical Image Synthesis"
 (see https://arxiv.org/abs/2211.03364).
+
+Do some modifivations to the original code so that it can fit our dataset.
 
 ![Generated Samples by our Medical Diffusion model](assets/generated_samples.gif)
 
