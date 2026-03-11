@@ -66,7 +66,7 @@ PYTHONPATH=. python train/train_ddpm.py \
   model.diffusion_num_channels=8 \
   model.dim_mults=[1,2,4,8] \
   model.batch_size=2 \
-  model.save_and_sample_every=50 \
+  model.save_and_sample_every=1000 \
   model.gpus=0
 ```
 
