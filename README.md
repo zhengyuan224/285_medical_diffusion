@@ -59,13 +59,13 @@ PYTHONPATH=. python train/train_ddpm.py \
   dataset=default \
   dataset.root_dir=/root/medicaldiffusion/my_dataset \
   model.results_folder_postfix='own_dataset' \
-  model.vqgan_ckpt=/root/medicaldiffusion/checkpoints/DEFAULT/lightning_logs/version_1/checkpoints/latest_checkpoint.ckpt \
+  model.vqgan_ckpt=/root/medicaldiffusion/checkpoints/vq_gan/DEFAULT/lightning_logs/version_0/checkpoints/latest_checkpoint.ckpt \
   model.diffusion_img_size=64 \
   model.diffusion_depth_size=8 \
   model.diffusion_num_channels=8 \
   model.dim_mults=[1,2,4,8] \
   model.batch_size=2 \
-  model.save_and_sample_every=5000 \
+  model.save_and_sample_every=500 \
   model.gpus=0
 ```
 
